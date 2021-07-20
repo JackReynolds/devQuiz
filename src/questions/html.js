@@ -15,7 +15,7 @@ const htmlQuestions = [
     number: 3,
     question: "What are void elements in HTML?",
     answer:
-      "HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example <br />, <img />, <hr />, etc",
+      "HTML elements which do not have closing tags or do not need to be closed are void elements. For Example <br />, <img />, <hr />, etc",
   },
   {
     number: 4,
