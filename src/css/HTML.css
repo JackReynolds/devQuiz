@@ -1,0 +1,25 @@
+.hidden {
+  display: none;
+}
+
+.question-number {
+  font-size: 1.2rem;
+}
+
+.question {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.answer {
+  font-size: 1.2rem;
+}
+
+button {
+  margin: 1rem !important;
+}
+
+.disabled {
+  background-color: red;
+  cursor: not-allowed;
+}

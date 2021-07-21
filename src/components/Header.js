@@ -52,6 +52,8 @@ const Header = () => {
             </div>
           </div>
         </nav>
+
+        <div className="page-heading">HTML Questions</div>
       </header>
     </section>
   );
