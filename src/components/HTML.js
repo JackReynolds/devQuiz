@@ -1,10 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "../css/HTML.css";
 
 const HTML = ({ htmlQuestions }) => {
+  const yesButton = useRef();
+  const noButton = useRef();
+
   const [showAnswerNumber, setShowAnswerNumber] = useState();
+  let [score, setScore] = useState(0);
+
   const hideButtonShowAnswer = (event) => {
     setShowAnswerNumber(event.target.id);
+  };
+
+  const correctAnswer = () => {
+    // setShowAnswerNumber(0);
+    setScore((score += 1));
+    console.log(score);
+    yesButton.current.className = "button is-success yes-button";
+    noButton.current.className = "button is-danger no-button";
+  };
+
+  const incorrectAnswer = () => {
+    yesButton.current.className = "button is-danger yes-button";
+    noButton.current.className = "button is-success yes-button";
   };
 
   return (
@@ -16,30 +34,57 @@ const HTML = ({ htmlQuestions }) => {
               Question number: {htmlQuestion.number}
             </div>
             <div className="question">{htmlQuestion.question}</div>
-            <div
-              id={htmlQuestion.number}
-              className={
-                showAnswerNumber == htmlQuestion.number
-                  ? "answer"
-                  : "answer hidden"
-              }
-            >
-              {htmlQuestion.answer}
+            <div className="answer-container">
+              <div
+                id={htmlQuestion.number}
+                className={
+                  showAnswerNumber == htmlQuestion.number
+                    ? "answer"
+                    : "answer hidden"
+                }
+              >
+                {htmlQuestion.answer}
+              </div>
+              <button
+                id={htmlQuestion.number}
+                className={
+                  showAnswerNumber == htmlQuestion.number
+                    ? "hidden"
+                    : "button is-primary"
+                }
+                onClick={hideButtonShowAnswer}
+              >
+                Show answer
+              </button>
+              {showAnswerNumber == htmlQuestion.number ? (
+                <div>
+                  <p className="correct-answer-question">
+                    Did you get the answer correct?
+                  </p>
+                  <button
+                    ref={yesButton}
+                    className="button is-warning yes-button"
+                    onClick={correctAnswer}
+                  >
+                    Yes
+                  </button>
+                  <button
+                    ref={noButton}
+                    className="button is-light no-button"
+                    onClick={incorrectAnswer}
+                  >
+                    No
+                  </button>
+                </div>
+              ) : null}
             </div>
-            <button
-              id={htmlQuestion.number}
-              className={
-                showAnswerNumber == htmlQuestion.number
-                  ? "button is-danger"
-                  : "button is-primary"
-              }
-              onClick={hideButtonShowAnswer}
-            >
-              Show answer
-            </button>
           </div>
         );
       })}
+      <div className="total-score">
+        Total Score: <span className="score">{score}</span>/
+        <span className="total">{htmlQuestions.length}</span>
+      </div>
     </div>
   );
 };
