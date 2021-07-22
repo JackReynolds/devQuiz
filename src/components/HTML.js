@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import "../css/HTML.css";
 
-const HTML = ({ htmlQuestions }) => {
+const HTML = ({ htmlQuestions, heading }) => {
   const yesButton = useRef();
   const noButton = useRef();
 
@@ -27,6 +27,7 @@ const HTML = ({ htmlQuestions }) => {
 
   return (
     <div>
+      <h1 className="page-heading">HTML Questions</h1>
       {htmlQuestions.map((htmlQuestion) => {
         return (
           <div className="question-container" key={htmlQuestion.number}>
