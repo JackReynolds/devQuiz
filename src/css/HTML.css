@@ -1,7 +1,11 @@
+:root {
+  --primary-color: hsl(171, 100%, 41%);
+}
+
 .page-heading {
   text-align: center;
   font-size: 3rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0 2rem 0;
 }
 
 .hidden {
@@ -10,6 +14,7 @@
 
 .question-number {
   font-size: 1.2rem;
+  margin-top: 2rem;
 }
 
 .question {
@@ -42,6 +47,7 @@
 .answer {
   font-size: 1.2rem;
   animation: fadeIn 1.5s;
+  margin: 1rem;
 }
 
 button {
@@ -72,7 +78,7 @@ button {
 }
 
 .score {
-  color: greenyellow;
+  color: var(--primary-color);
 }
 
 .total {
@@ -81,4 +87,13 @@ button {
 
 .selectedButton {
   color: black;
+}
+
+.heading-break-line {
+  width: 40vw;
+  margin: auto !important;
+}
+
+.break-line {
+  width: 30vw;
 }

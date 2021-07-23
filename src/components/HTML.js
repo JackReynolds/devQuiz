@@ -28,12 +28,14 @@ const HTML = ({ htmlQuestions, heading }) => {
   return (
     <div>
       <h1 className="page-heading">HTML Questions</h1>
+      <hr className="heading-break-line" />
       {htmlQuestions.map((htmlQuestion) => {
         return (
           <div className="question-container" key={htmlQuestion.number}>
             <div className="question-number">
-              Question number: {htmlQuestion.number}
+              <strong>Question number: {htmlQuestion.number}</strong>
             </div>
+            <hr className="break-line" />
             <div className="question">{htmlQuestion.question}</div>
             <div className="answer-container">
               <div
@@ -43,8 +45,9 @@ const HTML = ({ htmlQuestions, heading }) => {
                     ? "answer"
                     : "answer hidden"
                 }
+                dangerouslySetInnerHTML={{ __html: htmlQuestion.answer }}
               >
-                {htmlQuestion.answer}
+                {/* {htmlQuestion.answer} */}
               </div>
               <button
                 id={htmlQuestion.number}

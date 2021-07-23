@@ -7,7 +7,7 @@ const Header = () => {
     <section id="header">
       <header>
         <nav
-          className="navbar is-danger"
+          className="navbar is-primary"
           role="navigation"
           aria-label="main navigation"
         >

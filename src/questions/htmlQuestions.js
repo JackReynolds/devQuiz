@@ -3,7 +3,7 @@ const htmlQuestions = [
     number: 1,
     question: "Are the HTML tags and elements the same thing?",
     answer:
-      "No. HTML elements are defined by a starting tag, may contain some content and a closing tag.For example, <h1>Heading 1</h1> is a HTML element but just <h1> is a starting tag and </h1> is a closing tag.",
+      "No. HTML elements are defined by a starting tag, may contain some content and a closing tag.For example, &lt;h1&gt;Heading 1&lt;/h1&gt; is a HTML element but just <h1> is a starting tag and </h1> is a closing tag.",
   },
   {
     number: 2,
