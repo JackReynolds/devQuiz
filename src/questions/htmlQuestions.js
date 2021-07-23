@@ -3,31 +3,31 @@ const htmlQuestions = [
     number: 1,
     question: "Are the HTML tags and elements the same thing?",
     answer:
-      "No. HTML elements are defined by a starting tag, may contain some content and a closing tag.For example, &lt;h1&gt;Heading 1&lt;/h1&gt; is a HTML element but just <h1> is a starting tag and </h1> is a closing tag.",
+      "No. HTML elements are defined by a starting tag, may contain some content and a closing tag.<br>For example, &lt;h1&gt;Heading 1&lt;/h1&gt; is a HTML element but just &lt;h1&gt; is a starting tag and &lt;/h1&gt; is a closing tag.",
   },
   {
     number: 2,
     question: "What are tags and attributes in HTML?",
     answer:
-      "Tags are the primary component of the HTML that defines how the content will be structured/ formatted, whereas Attributes are used along with the HTML tags to define the characteristics of the element. For example, <p align=” center”>Interview questions</p>, in this the ‘align’ is the attribute using which we will align the paragraph to show in the center of the view.",
+      "Tags are the primary component of the HTML that defines how the content will be structured/ formatted, whereas Attributes are used along with the HTML tags to define the characteristics of the element. <br>For example, &lt;p align=” center”&gt;Interview questions&lt;/p&gt;, in this the ‘align’ is the attribute using which we will align the paragraph to show in the center of the view.",
   },
   {
     number: 3,
     question: "What are void elements in HTML?",
     answer:
-      "HTML elements which do not have closing tags or do not need to be closed are void elements. For Example <br />, <img />, <hr />, etc",
+      "HTML elements which do not have closing tags or do not need to be closed are void elements. For Example &lt;br /&gt;, &lt;img /&gt;, &lt;hr /&gt;, etc",
   },
   {
     number: 4,
     question: "What is the advantage of collapsing white space?",
     answer:
-      "In HTML, a blank sequence of whitespace characters is treated as a single space character, Because the browser collapses multiple spaces into a single space character and this helps a developer to indent lines of text without worrying about multiple spaces and maintain readability and understandability of HTML codes.",
+      "In HTML, a blank sequence of whitespace characters is treated as a single space character. <br> Because the browser collapses multiple spaces into a single space character and this helps a developer to indent lines of text without worrying about multiple spaces and maintain readability and understandability of HTML codes.",
   },
   {
     number: 5,
     question: "What are HTML 'Entities'?",
     answer:
-      "In HTML some characters are reserved like ‘<’, ‘>’, ‘/’, etc. To use these characters in our webpage we need to use the character entities called HTML Entities. Below are a few mapping between the reserved character and its respective entity character to be used.",
+      "In HTML some characters are reserved like ‘&lt;’, ‘&gt;’, ‘/’, etc. To use these characters in our webpage we need to use the character entities called HTML Entities. <br>Below are a few mapping between the reserved character and its respective entity character to be used.",
   },
   {
     number: 6,
@@ -37,7 +37,8 @@ const htmlQuestions = [
   {
     number: 7,
     question: "What are different types of lists in HTML?",
-    answer: "Unordered list <ul></ul> and ordered list <ol></ol>.",
+    answer:
+      "Unordered list &lt;ul&gt;&lt;/ul&gt; and ordered list &lt;ol&gt;&lt;/ol&gt;.",
   },
   {
     number: 8,
@@ -56,13 +57,13 @@ const htmlQuestions = [
     number: 10,
     question: "Describe HTML layout structure?",
     answer:
-      "Every webpage has different components to display the intended content and a specific UI. But still, there are a few things which are templated and globally accepted as a way to structure a web page, such as: <header> - <footer> - <nav> - <article> - <section> - <body> - <aside>",
+      "Every webpage has different components to display the intended content and a specific UI. But still, there are a few things which are templated and globally accepted as a way to structure a web page, such as: &lt;header&gt; - &lt;footer&gt; - &lt;nav&gt; - &lt;article&gt; - &lt;section&gt; - &lt;body&gt; - &lt;aside&gt;",
   },
   {
     number: 11,
     question: "Are the HTML tags and elements the same thing?",
     answer:
-      "No. HTML elements are defined by a starting tag, may contain some content and a closing tag.For example, <h1>Heading 1</h1> is a HTML element but just <h1> is a starting tag and </h1> is a closing tag.",
+      "No. HTML elements are defined by a starting tag, may contain some content and a closing tag.For example, &lt;h1&gt;Heading 1&lt;/h1&gt; is a HTML element but just &lt;h1&gt; is a starting tag and &lt;/h1&gt; is a closing tag.",
   },
   {
     number: 12,
@@ -86,39 +87,41 @@ const htmlQuestions = [
     number: 15,
     question:
       "How can you open a new URL into a new tab when clicking an anchor tag?",
-    answer: "<a href='#' target='_blank'></a>",
+    answer: "&lt;a href='#' target='_blank'&gt;&lt;/a&gt;",
   },
   {
     number: 16,
     question:
-      "What are the various formatting tags in HTML? <b>, <i>, <em>, <big>, <small>, <sub>, <sup>, <del>, <strong>, <mark>, <ins>",
+      "What are the various formatting tags in HTML? &lt;b&gt;, &lt;i&gt;, &lt;em&gt;, &lt;big&gt;, &lt;small&gt;, &lt;sub&gt;, &lt;sup&gt;, &lt;del&gt;, &lt;strong&gt;, &lt;mark&gt;, &lt;ins&gt;",
     answer:
-      "<b> - makes text bold, <i> - makes text italicised, <em> - makes text italicised but with added semantics importance, <big> - incrases the font size of the text by one unit, <small> - decreases the font size of the text by one unit, <sub> - makes the text a subscript, <sup> - makes the text a superscript, <del> - displays as strike out text, <strong> - marks the text as important and bold, <mark> - highlights the text, <ins> - displays as added text",
+      "&lt;b&gt; - makes text bold, &lt;i&gt; - makes text italicised, &lt;em&gt; - makes text italicised but with added semantics importance, &lt;big&gt; - incrases the font size of the text by one unit, &lt;small&gt; - decreases the font size of the text by one unit, &lt;sub&gt; - makes the text a subscript, &lt;sup&gt; - makes the text a superscript, &lt;del&gt; - displays as strike out text, &lt;strong&gt; - marks the text as important and bold, &lt;mark&gt; - highlights the text, &lt;ins&gt; - displays as added text",
   },
   {
     number: 17,
     question:
       "Explain how to indicate the character set being used by a document in HTML",
-    answer: "<meta charset='utf-8'>",
+    answer: "&lt;meta charset='utf-8'&gt;",
   },
   {
     number: 18,
     question:
-      "What is the main difference between <strong>, <b> and <em>, <i> tags?",
+      "What is the main difference between &lt;strong&gt;, &lt;b&gt; and &lt;em&gt;, &lt;i&gt; tags?",
     answer:
-      "The effect on a normal webpage of the tags <strong>, <b>  and <em>, <i> is the same. <b> and <i> tags stands for bold and italic. These two tags only apply font styling and bold tag <b>, just adds more ink to the text, these tags don't say anything about the text. Whereas, <strong> and <em> tags represent that the span of text is of strong importance or more importance and emphatic stress respectively than the rest of the text. These tags have semantic meaning.",
+      "The effect on a normal webpage of the tags &lt;strong&gt;, &lt;b&gt;  and &lt;em&gt;, &lt;i&gt; is the same. &lt;b&gt; and &lt;i&gt; tags stands for bold and italic. These two tags only apply font styling and bold tag &lt;b&gt;, just adds more ink to the text, these tags don't say anything about the text. Whereas, &lt;strong&gt; and &lt;em&gt; tags represent that the span of text is of strong importance or more importance and emphatic stress respectively than the rest of the text. These tags have semantic meaning.",
   },
   {
     number: 19,
-    question: "What is the significance of <head> and <body> tag in HTML?",
+    question:
+      "What is the significance of &lt;head&gt; and &lt;body&gt; tag in HTML?",
     answer:
-      "<head> tag provides the information about the document. It should always be enclosed in the <html> tag. This tag contains the metadata about the webpage and the tags which are enclosed by head tag like <link>, <meta>, <style>, <script>, etc. are not displayed on the web page. Also, there can be only 1 <head> tag in the entire Html document and will always be before the <body> tag. <body> tag defines the body of the HTML document. It should always be enclosed in the <html> tag. All the contents which needs to be displayed on the web page like images, text, audio, video, contents, using elements like <p>, <img>, <audio>, <heading>, <video>, <div>, etc. will always be enclosed by the <body> tag. Also, there can be only 1 body element in an HTML document and will always be after the <head> tag.",
+      "&lt;head&gt; tag provides the information about the document. It should always be enclosed in the &lt;html&gt; tag. This tag contains the metadata about the webpage and the tags which are enclosed by head tag like &lt;link&gt;, &lt;meta&gt;, &lt;style&gt;, &lt;script&gt;, etc. are not displayed on the web page. Also, there can be only 1 &lt;head&gt; tag in the entire Html document and will always be before the &lt;body&gt; tag. &lt;body&gt; tag defines the body of the HTML document. It should always be enclosed in the &lt;html&gt; tag. All the contents which needs to be displayed on the web page like images, text, audio, video, contents, using elements like &lt;p&gt;, &lt;img&gt;, &lt;audio&gt;, &lt;heading&gt;, &lt;video&gt;, &lt;div&gt;, etc. will always be enclosed by the &lt;body&gt; tag. Also, there can be only 1 body element in an HTML document and will always be after the &lt;head&gt; tag.",
   },
   {
     number: 20,
     question:
       "Can we display a web page inside a webpage or is nesting of webpages possible?",
-    answer: "Yes, this is possible. <iframe src='url of the webpage to embed'.",
+    answer:
+      "Yes, this is possible. &lt;iframe src='url of the webpage to embed'.",
   },
   {
     number: 21,
@@ -131,7 +134,7 @@ const htmlQuestions = [
     question:
       "How many ways can we position a HTML element? Or, what are the permissible values of the position attribute?",
     answer:
-      "There are mainly 7 valyes of position attribute that can be used to position a HTML elemnt. 1. Static: default value. Here the element is positioned according to the normal flow of the document. absolute: Here the element is positioned relative to its parent element. The final position is determined by the values of left, right, top, bottom. fixed: This is similar to absolute except here the elements are positioned relative to the <html> element. relative: Here the element is positioned according to the normal flow of the document and positioned relative to its original/ normal position. initial: This resets the property to its default value.inherit: Here the element inherits or takes the property of its parent.",
+      "There are mainly 7 valyes of position attribute that can be used to position a HTML elemnt. 1. Static: default value. Here the element is positioned according to the normal flow of the document. absolute: Here the element is positioned relative to its parent element. The final position is determined by the values of left, right, top, bottom. fixed: This is similar to absolute except here the elements are positioned relative to the &lt;html&gt; element. relative: Here the element is positioned according to the normal flow of the document and positioned relative to its original/ normal position. initial: This resets the property to its default value.inherit: Here the element inherits or takes the property of its parent.",
   },
   {
     number: 23,
@@ -150,34 +153,34 @@ const htmlQuestions = [
     number: 25,
     question: "Are the HTML tags and elements the same thing?",
     answer:
-      "No. HTML elements are defined by a starting tag, may contain some content and a closing tag.For example, <h1>Heading 1</h1> is a HTML element but just <h1> is a starting tag and </h1> is a closing tag.",
+      "No. HTML elements are defined by a starting tag, may contain some content and a closing tag.For example, &lt;h1&gt;Heading 1&lt;/h1&gt; is a HTML element but just &lt;h1&gt; is a starting tag and &lt;/h1&gt; is a closing tag.",
   },
   {
     number: 26,
     question:
       "How do you create a link in HTML and explain the target attribute?",
     answer:
-      "HTML provides a hyperlink - <a> tag to specify the links in a webpage. The ‘href’ attribute is used to specify the link and the ‘target’ attribute is used to specify, where do we want to open the linked document. The ‘target’ attribute can have the following values: _self: This is a default value. It opens the document in the same window or tab as it was clicked. _blank: It opens the document in a new window or tab. _parent: It opens the document in a parent frame. _top: It opens the document in a full-body window.",
+      "HTML provides a hyperlink - &lt;a&gt; tag to specify the links in a webpage. The ‘href’ attribute is used to specify the link and the ‘target’ attribute is used to specify, where do we want to open the linked document. The ‘target’ attribute can have the following values: _self: This is a default value. It opens the document in the same window or tab as it was clicked. _blank: It opens the document in a new window or tab. _parent: It opens the document in a parent frame. _top: It opens the document in a full-body window.",
   },
   {
     number: 27,
     question:
       "How many ways can we specify the CSS styles for the HTML element?",
     answer:
-      "Inline: here we use the 'style' attribute inside the HTML element. Internal: Here we use the <style> tag inside the <head> tag. External: Here we use the <link> tag inside the head to reference a separate CSS file. ",
+      "Inline: here we use the 'style' attribute inside the HTML element. Internal: Here we use the &lt;style&gt; tag inside the &lt;head&gt; tag. External: Here we use the &lt;link&gt; tag inside the head to reference a separate CSS file. ",
   },
   {
     number: 28,
     question:
-      "What is the difference between the link tag <link> and anchor tag <a>?",
+      "What is the difference between the link tag &lt;link&gt; and anchor tag &lt;a&gt;?",
     answer:
-      "The anchor tag <a> is used to create a hyperlink to another webpage or to a certain part of the webpage and these links are clickable, whereas, link tag <link> defines a link between a document and an external resource and these are not clickable.",
+      "The anchor tag &lt;a&gt; is used to create a hyperlink to another webpage or to a certain part of the webpage and these links are clickable, whereas, link tag &lt;link&gt; defines a link between a document and an external resource and these are not clickable.",
   },
   {
     number: 29,
     question: "How can you include JavaScript code in HTML?",
     answer:
-      "HTML proivdes a <script> tag which we can run the JS code, either by writing JS code directly within the <script> tag or linking to a file using <script src='path to file></script>'.",
+      "HTML proivdes a &lt;script&gt; tag which we can run the JS code, either by writing JS code directly within the &lt;script&gt; tag or linking to a file using &lt;script src='path to file&gt;&lt;/script&gt;'.",
   },
   {
     number: 30,
@@ -190,7 +193,7 @@ const htmlQuestions = [
     number: 31,
     question: "What are HTML forms and how do we create them?",
     answer:
-      "The HTML form is used to collect the user inputs. HTML provides a <form> tag to create forms. To take input from the user we use the <input> tag inside the form so that all collected user data can be sent to the server for processing. There are different input types like ‘button’, ‘checkbox’, ‘number’, ‘text’, ‘password’, ‘submit’ etc. Sample form: <form action='/submit_data php'> <label>Enter your name: </label> <input type='text' name='name'/> <label>Enter Mobile number </label> <input type='number' name='mobile_no'/> <input type='submit' value='Submit'></form>",
+      "The HTML form is used to collect the user inputs. HTML provides a &lt;form&gt; tag to create forms. To take input from the user we use the &lt;input&gt; tag inside the form so that all collected user data can be sent to the server for processing. There are different input types like ‘button’, ‘checkbox’, ‘number’, ‘text’, ‘password’, ‘submit’ etc. Sample form: &lt;form action='/submit_data php'&gt; &lt;label&gt;Enter your name: &lt;/label&gt; &lt;input type='text' name='name'/&gt; &lt;label&gt;Enter Mobile number &lt;/label&gt; &lt;input type='number' name='mobile_no'/&gt; &lt;input type='submit' value='Submit'&gt;&lt;/form&gt;",
   },
   {
     number: 32,
@@ -208,7 +211,7 @@ const htmlQuestions = [
     number: 34,
     question: "How can we include audio or video in a webpage?",
     answer:
-      "HTML5 provides two tags: <audio> and <video> tags using whihc we can add the audio or video directly in the webpage.",
+      "HTML5 provides two tags: &lt;audio&gt; and &lt;video&gt; tags using whihc we can add the audio or video directly in the webpage.",
   },
   {
     number: 35,
@@ -221,37 +224,38 @@ const htmlQuestions = [
     number: 36,
     question: "Provide some examples of inline elements?",
     answer:
-      "<span>, <a>, <strong>, <img>, <button>, <em>, <select>, <abbr>, <label>, <sub>, <cite>, <abbr>, <script>, <label>, <i>, <input>, <output>, <q>, etc.",
+      "&lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;img&gt;, &lt;button&gt;, &lt;em&gt;, &lt;select&gt;, &lt;abbr&gt;, &lt;label&gt;, &lt;sub&gt;, &lt;cite&gt;, &lt;abbr&gt;, &lt;script&gt;, &lt;label&gt;, &lt;i&gt;, &lt;input&gt;, &lt;output&gt;, &lt;q&gt;, etc.",
   },
   {
     number: 37,
     question: "Provide some examples of block level elements?",
     answer:
-      "<div>, <p>, <header>, <footer>, <h1>...<h6>, <form>, <table>, <canvas>, <video>, <blockquote>, <pre>, <ul>, <ol>, <figcaption>, <figure>, <hr>, <article>, <section>, etc.",
+      "&lt;div&gt;, &lt;p&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;h1&gt;...&lt;h6&gt;, &lt;form&gt;, &lt;table&gt;, &lt;canvas&gt;, &lt;video&gt;, &lt;blockquote&gt;, &lt;pre&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;figcaption&gt;, &lt;figure&gt;, &lt;hr&gt;, &lt;article&gt;, &lt;section&gt;, etc.",
   },
   {
     number: 38,
-    question: "Is the <datalist> tag and <select> tag the same?",
+    question: "Is the &lt;datalist&gt; tag and &lt;select&gt; tag the same?",
     answer:
-      "No. The <datalist> tag and <select> tag are different. In the case of <select> tag a user will have to choose from a list of options, whereas <datalist> when used along with the <input> tag provides a suggestion that the user selects one of the options given or can enter some entirely different value.",
+      "No. The &lt;datalist&gt; tag and &lt;select&gt; tag are different. In the case of &lt;select&gt; tag a user will have to choose from a list of options, whereas &lt;datalist&gt; when used along with the &lt;input&gt; tag provides a suggestion that the user selects one of the options given or can enter some entirely different value.",
   },
   {
     number: 39,
-    question: "What is the difference between <figure> and <img> tags?",
+    question:
+      "What is the difference between &lt;figure&gt; and &lt;img&gt; tags?",
     answer:
-      "The <figure> tag specifies the self-contained content, like diagrams, images, code snippets, etc. <figure> tag is used to semantically organize the contents of an image like image, image caption, etc., whereas the <img> tag is used to embed the picture in the HTML5 document.",
+      "The &lt;figure&gt; tag specifies the self-contained content, like diagrams, images, code snippets, etc. &lt;figure&gt; tag is used to semantically organize the contents of an image like image, image caption, etc., whereas the &lt;img&gt; tag is used to embed the picture in the HTML5 document.",
   },
   {
     number: 40,
     question: "Define image map?",
     answer:
-      "Image Map lets a developer map/link different parts of images with the different web pages. It can be achieved by the <map> tag in HTML5, using which we can link images with clickable areas. <img src='image_url' usemap='#workspace' /> <map  name=”workspace”> <area shape=”rect”  coords=”34, 44, 270, 350” ,  href=”xyz.html” /> <area shape=”rect”  coords=”10, 120, 250, 360” ,  href=”xyz.html /> </map>",
+      "Image Map lets a developer map/link different parts of images with the different web pages. It can be achieved by the &lt;map&gt; tag in HTML5, using which we can link images with clickable areas. &lt;img src='image_url' usemap='#workspace' /&gt; &lt;map  name=”workspace”&gt; &lt;area shape=”rect”  coords=”34, 44, 270, 350” ,  href=”xyz.html” /&gt; &lt;area shape=”rect”  coords=”10, 120, 250, 360” ,  href=”xyz.html /&gt; &lt;/map&gt;",
   },
   {
     number: 41,
     question: "What are Semantic Elements?",
     answer:
-      "Semantic elements are those which describe the particular meaning to the browser and the developer. Elements like <form>, <table>, <article>, <figure>, etc., are semantic elements.",
+      "Semantic elements are those which describe the particular meaning to the browser and the developer. Elements like &lt;form&gt;, &lt;table&gt;, &lt;article&gt;, &lt;figure&gt;, etc., are semantic elements.",
   },
   {
     number: 42,
@@ -281,7 +285,7 @@ const htmlQuestions = [
     question:
       "Which tag is used for representing the result of a calculation? Explain its attributes?",
     answer:
-      "The <output> tag is used for representing the result of a calculation. It has the following attributes: for - It defines the relationship between the elements used in calculation and result. form - This is used to define the form the output element belongs to. name - The name of the output element.",
+      "The &lt;output&gt; tag is used for representing the result of a calculation. It has the following attributes: for - It defines the relationship between the elements used in calculation and result. form - This is used to define the form the output element belongs to. name - The name of the output element.",
   },
   {
     number: 47,
@@ -293,13 +297,13 @@ const htmlQuestions = [
     number: 48,
     question: "What are the new tags in Media Elements in HTML5?",
     answer:
-      "<audio> - Used for sounds, audio streams, or music, embed audio content without any additional plug-in. <video> - Used for video streams, embed video content etc. <source> - Used for multiple media resources in media elements, such as audio, video, etc. <embed> - Used for an external application or embedded content. <track> - Used for subtitles in the media elements such as video or audio.",
+      "&lt;audio&gt; - Used for sounds, audio streams, or music, embed audio content without any additional plug-in. &lt;video&gt; - Used for video streams, embed video content etc. &lt;source&gt; - Used for multiple media resources in media elements, such as audio, video, etc. &lt;embed&gt; - Used for an external application or embedded content. &lt;track&gt; - Used for subtitles in the media elements such as video or audio.",
   },
   {
     number: 49,
     question: "Why do we need the MathML element in HTML5?",
     answer:
-      "MathML stands for Mathematical Markup Language. It is used for displaying mathematical expressions on web pages. For this <math> tag is used.",
+      "MathML stands for Mathematical Markup Language. It is used for displaying mathematical expressions on web pages. For this &lt;math&gt; tag is used.",
   },
   {
     number: 50,
