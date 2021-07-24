@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Header from "./Header";
 import HTML from "./HTML";
 import Route from "./Route";
+import CSS from "./CSS";
 import "../css/App.css";
 import Link from "./Link";
 import htmlQuestions from "../questions/htmlQuestions";
@@ -44,12 +45,12 @@ const App = () => {
       </Route>
 
       <Route path="/html">
-        <HTML htmlQuestions={htmlQuestions} />
+        <HTML questionDataArray={htmlQuestions} />
       </Route>
-      {/* <Route path="/css">
-        <CSS htmlQuestions={cssQuestions} />
+      <Route path="/css">
+        <CSS questionDataArray={cssQuestions} />
       </Route>
-      <Route path="/javascript">
+      {/* <Route path="/javascript">
         <JavaScript htmlQuestions={jsQuestions} />
       </Route>
       <Route path="/react">

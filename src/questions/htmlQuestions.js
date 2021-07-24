@@ -92,7 +92,7 @@ const htmlQuestions = [
   {
     number: 16,
     question:
-      "What are the various formatting tags in HTML? &lt;b&gt;, &lt;i&gt;, &lt;em&gt;, &lt;big&gt;, &lt;small&gt;, &lt;sub&gt;, &lt;sup&gt;, &lt;del&gt;, &lt;strong&gt;, &lt;mark&gt;, &lt;ins&gt;",
+      "What are the various formatting tags in HTML? <br> &lt;b&gt; &lt;i&gt; &lt;em&gt;  &lt;big&gt; &lt;small&gt; &lt;sub&gt; &lt;sup&gt; &lt;del&gt; &lt;strong&gt; &lt;mark&gt; &lt;ins&gt;",
     answer:
       "&lt;b&gt; - makes text bold, &lt;i&gt; - makes text italicised, &lt;em&gt; - makes text italicised but with added semantics importance, &lt;big&gt; - incrases the font size of the text by one unit, &lt;small&gt; - decreases the font size of the text by one unit, &lt;sub&gt; - makes the text a subscript, &lt;sup&gt; - makes the text a superscript, &lt;del&gt; - displays as strike out text, &lt;strong&gt; - marks the text as important and bold, &lt;mark&gt; - highlights the text, &lt;ins&gt; - displays as added text",
   },
@@ -105,7 +105,7 @@ const htmlQuestions = [
   {
     number: 18,
     question:
-      "What is the main difference between &lt;strong&gt;, &lt;b&gt; and &lt;em&gt;, &lt;i&gt; tags?",
+      "What is the main difference between &lt;strong&gt; &lt;b&gt; and &lt;em&gt; &lt;i&gt; tags?",
     answer:
       "The effect on a normal webpage of the tags &lt;strong&gt;, &lt;b&gt;  and &lt;em&gt;, &lt;i&gt; is the same. &lt;b&gt; and &lt;i&gt; tags stands for bold and italic. These two tags only apply font styling and bold tag &lt;b&gt;, just adds more ink to the text, these tags don't say anything about the text. Whereas, &lt;strong&gt; and &lt;em&gt; tags represent that the span of text is of strong importance or more importance and emphatic stress respectively than the rest of the text. These tags have semantic meaning.",
   },
