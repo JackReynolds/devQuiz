@@ -1,10 +1,10 @@
 import React from "react";
 
-const Score = () => {
+const Score = (score, questionDataArray) => {
   return (
-    <div>
-      You Scored: <span className="user-score">X</span>/
-      <span className="total">Y</span>
+    <div className="total-score">
+      Total Score: <span className="score">{score}</span>/
+      <span className="total">{questionDataArray.length}</span>
     </div>
   );
 };

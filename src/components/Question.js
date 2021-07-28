@@ -1,28 +1,27 @@
 import React, { useState, useRef } from "react";
 
-const Question = ({ questionData }) => {
+const Question = ({ questionData, updateScore }) => {
   const yesButton = useRef();
   const noButton = useRef();
-
   const [showAnswerNumber, setShowAnswerNumber] = useState();
-  let [score, setScore] = useState(0);
+  const [isDisabled, setIsDisabled] = useState();
 
   const hideButtonShowAnswer = (event) => {
     setShowAnswerNumber(event.target.id);
   };
 
-  const correctAnswer = () => {
-    // setShowAnswerNumber(0);
-    setScore((score += 1));
-    console.log(score);
-    yesButton.current.className = "button is-success yes-button";
-    noButton.current.className = "button is-danger no-button";
-  };
+  // const correctAnswer = () => {
+  //   // setShowAnswerNumber(0);
+  //   setScore((score += 1));
+  //   console.log(score);
+  //   yesButton.current.className = "button is-success yes-button";
+  //   noButton.current.className = "button is-danger no-button";
+  // };
 
-  const incorrectAnswer = () => {
-    yesButton.current.className = "button is-danger yes-button";
-    noButton.current.className = "button is-success yes-button";
-  };
+  // const incorrectAnswer = () => {
+  //   yesButton.current.className = "button is-danger yes-button";
+  //   noButton.current.className = "button is-success yes-button";
+  // };
 
   return (
     <div className="question-container" key={questionData.number}>
@@ -60,15 +59,17 @@ const Question = ({ questionData }) => {
             </p>
             <button
               ref={yesButton}
-              className="button is-warning yes-button"
-              onClick={correctAnswer}
+              className="button is-success yes-button"
+              onClick={() => updateScore(true, yesButton, setIsDisabled(true))}
+              disabled={isDisabled}
             >
               Yes
             </button>
             <button
               ref={noButton}
-              className="button is-light no-button"
-              onClick={incorrectAnswer}
+              className="button is-danger no-button"
+              onClick={() => updateScore(false, noButton, setIsDisabled(true))}
+              disabled={isDisabled}
             >
               No
             </button>

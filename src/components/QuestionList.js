@@ -3,13 +3,20 @@ import Question from "./Question";
 
 const QuestionList = ({ questionDataArray }) => {
   let [score, setScore] = useState(0);
+
+  const updateScore = (correct, isDisabled) => {
+    if (correct) {
+      setScore(score + 1);
+    }
+  };
+
   console.log(questionDataArray);
   return (
     <div>
       {questionDataArray.map((questionData) => {
         return (
           <div>
-            <Question questionData={questionData} />;
+            <Question questionData={questionData} updateScore={updateScore} />;
           </div>
         );
       })}
@@ -22,3 +29,5 @@ const QuestionList = ({ questionDataArray }) => {
 };
 
 export default QuestionList;
+
+//
