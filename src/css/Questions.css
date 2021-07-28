@@ -52,6 +52,8 @@
   font-size: 1.2rem;
   animation: fadeIn 1.5s;
   margin: 1rem;
+  width: 95vh;
+  line-height: 2rem;
 }
 
 button {
@@ -100,4 +102,12 @@ button {
 
 .break-line {
   width: 30vw;
+}
+
+.code {
+  background-color: rgba(191, 211, 218, 0.3);
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: grey;
+  line-height: 2rem;
 }
